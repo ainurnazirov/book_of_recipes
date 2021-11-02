@@ -6,19 +6,25 @@ from django.shortcuts import get_object_or_404
 def index(request):
     recipes = Recipe.objects.all()
 
-    if request.method == "POST":
-        recipes = Recipe.objects.filter(title_recipe__contains=request.POST.get("search"))
-
     return render(request, 'index.html', {'recipes': recipes})
 
 
-def index2(request):
+def search(request, search_type):
     if request.method == "POST":
-        if Ingredient.objects.filter(title_ingredient__contains=request.POST.get("search2")).exists():
-            ingredient_id = Ingredient.objects.filter(title_ingredient__contains=request.POST.get("search2"))[0].id
-            recipes = Recipe.objects.filter(ingredients=ingredient_id)
+        if search_type == 0 and request.POST.get("search") != '':
+            query = request.POST.get("search")
+            recipes = Recipe.objects.filter(title_recipe__contains=query)
+        elif search_type == 1 and request.POST.get("search2") != '':
+            query = request.POST.get("search2").lower()
+            if Ingredient.objects.filter(title_ingredient__contains=query).exists():
+                ingredient_id = Ingredient.objects.filter(title_ingredient__contains=query)[0].id
+                recipes = Recipe.objects.filter(ingredients=ingredient_id)
+            else:
+                recipes = Recipe.objects.none()
         else:
             recipes = Recipe.objects.none()
+    else:
+        recipes = Recipe.objects.none()
 
     return render(request, 'index.html', {'recipes': recipes})
 

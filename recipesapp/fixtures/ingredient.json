@@ -3,112 +3,112 @@
    "model": "recipesapp.ingredient",
     "pk": 1,
     "fields": {
-      "title_ingredient": "Картофель"
+      "title_ingredient": "картофель"
     }
   },
   {
    "model": "recipesapp.ingredient",
     "pk": 2,
     "fields": {
-      "title_ingredient": "Курица"
+      "title_ingredient": "курица"
     }
   },
   {
    "model": "recipesapp.ingredient",
     "pk": 3,
     "fields": {
-      "title_ingredient": "Спагетти"
+      "title_ingredient": "рис"
     }
   },
   {
    "model": "recipesapp.ingredient",
     "pk": 4,
     "fields": {
-      "title_ingredient": "Макароны"
+      "title_ingredient": "макароны"
     }
   },
   {
    "model": "recipesapp.ingredient",
     "pk": 5,
     "fields": {
-      "title_ingredient": "Масло растительное"
+      "title_ingredient": "масло растительное"
     }
   },
   {
    "model": "recipesapp.ingredient",
     "pk": 6,
     "fields": {
-      "title_ingredient": "Соль"
+      "title_ingredient": "соль"
     }
   },
   {
    "model": "recipesapp.ingredient",
     "pk": 7,
     "fields": {
-      "title_ingredient": "Перец черный молотый"
+      "title_ingredient": "перец черный молотый"
     }
   },
   {
    "model": "recipesapp.ingredient",
     "pk": 8,
     "fields": {
-      "title_ingredient": "Молоко"
+      "title_ingredient": "молоко"
     }
   },
   {
    "model": "recipesapp.ingredient",
     "pk": 9,
     "fields": {
-      "title_ingredient": "Вода"
+      "title_ingredient": "вода"
     }
   },
   {
    "model": "recipesapp.ingredient",
     "pk": 10,
     "fields": {
-      "title_ingredient": "Говядина"
+      "title_ingredient": "говядина"
     }
   },
   {
    "model": "recipesapp.ingredient",
     "pk": 11,
     "fields": {
-      "title_ingredient": "Свинина"
+      "title_ingredient": "свинина"
     }
   },
   {
    "model": "recipesapp.ingredient",
     "pk": 12,
     "fields": {
-      "title_ingredient": "Лук"
+      "title_ingredient": "лук"
     }
   },
   {
    "model": "recipesapp.ingredient",
     "pk": 13,
     "fields": {
-      "title_ingredient": "Чеснок"
+      "title_ingredient": "чеснок"
     }
   },
   {
    "model": "recipesapp.ingredient",
     "pk": 14,
     "fields": {
-      "title_ingredient": "Сливки 20%"
+      "title_ingredient": "сливки"
     }
   },
   {
    "model": "recipesapp.ingredient",
     "pk": 15,
     "fields": {
-      "title_ingredient": "Яйцо куриное"
+      "title_ingredient": "яйцо куриное"
     }
   },
   {
    "model": "recipesapp.ingredient",
     "pk": 16,
     "fields": {
-      "title_ingredient": "Масло сливочное"
+      "title_ingredient": "масло сливочное"
     }
   }
 ]
