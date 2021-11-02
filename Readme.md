@@ -53,5 +53,6 @@ python manage.py createsuperuser
 python manage.py loaddata ingredient recipe
 ```
 
-Проект доступен по адресу http://localhost:5000
+Проект доступен по адресу http://localhost:5000.
+
 Запуск с помощью Docker протестирован на Windows.
