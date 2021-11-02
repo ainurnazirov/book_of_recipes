@@ -1,0 +1,38 @@
+[
+  {
+   "model": "recipesapp.recipe",
+    "pk": 1,
+    "fields": {
+      "title_recipe": "Картофель фри",
+      "text_recipe": "Картофель нарезать соломкой. Пожарить во фритюре и посыпать солью. Приятного аппетита))))",
+      "ingredients": [1, 5, 6]
+    }
+  },
+  {
+   "model": "recipesapp.recipe",
+    "pk": 2,
+    "fields": {
+      "title_recipe": "Пюре картофельное",
+      "text_recipe": "Пюре картофельное ням-ням",
+      "ingredients": [1, 6, 8, 9, 15, 16]
+    }
+  },
+  {
+   "model": "recipesapp.recipe",
+    "pk": 3,
+    "fields": {
+      "title_recipe": "Макароны отварные",
+      "text_recipe": "Макароны отварные ням-ням",
+      "ingredients": [4, 6, 9]
+    }
+  },
+  {
+   "model": "recipesapp.recipe",
+    "pk": 4,
+    "fields": {
+      "title_recipe": "Паста с курицей в сливочном соусе",
+      "text_recipe": "Паста с курицей в сливочном соусе ням-ням",
+      "ingredients": [2, 4, 5, 6, 9, 13, 14]
+    }
+  }
+]

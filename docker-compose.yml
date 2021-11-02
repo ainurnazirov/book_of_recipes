@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+  # Database
+  db:
+    image: postgres:14-alpine
+    volumes:
+    - postgres_data:/var/lib/postgres/data/
+    environment:
+      POSTGRES_DB: "db"
+      POSTGRES_HOST_AUTH_METHOD: "trust"
+
+  # The application
+  app:
+    build: .
+    command: python /usr/src/book_of_recipes/manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/usr/src/book_of_recipes
+    env_file:
+      - .env
+    ports:
+    - 5000:8000
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:

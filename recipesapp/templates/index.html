@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Книга рецептов</title>
+    <style>
+        body {
+            background-image: url(https://static.vecteezy.com/system/resources/previews/002/789/418/large_2x/continuous-line-of-chef-cooking-illustration-free-vector.jpg);
+            background-attachment: local;
+           }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+<form action="{% url 'title_search' %}" method="post" class="d-flex editContent">
+{% csrf_token %}
+{{ form.non_field_errors }}
+<input type="search" name="search" placeholder="Введите название..." class="form-control" style="background-color: rgba(248,248,250,0.62);">
+<button type="submit" class="btn1 btn" style="background-color: rgba(248,248,250,0.62);">
+<span class="fa fa-search" aria-hidden="true">Поиск</span>
+</button>
+</form>
+
+<form action="{% url 'ingredient_search' %}" method="post" class="d-flex editContent">
+{% csrf_token %}
+{{ form.non_field_errors }}
+    <input type="search2" name="search2" placeholder="Введите название ингредиента..." class="form-control" style="background-color: rgba(248,248,250,0.62);">
+<button type="submit" class="btn1 btn" style="background-color: rgba(248,248,250,0.62);">
+<span class="fa fa-search" aria-hidden="true">Поиск</span>
+</button>
+
+</form>
+
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Название рецепта</th>
+        <th>Описание рецепта</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for recipe in recipes %}
+        <tr>
+            <td><b></b>{{recipe.title_recipe}}<br></td>
+            <td><b></b>{{recipe.text_recipe}}</td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
