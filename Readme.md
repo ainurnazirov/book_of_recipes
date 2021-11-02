@@ -24,13 +24,6 @@ docker-compose up --build
 
 При первом запуске данный процесс может занять несколько минут.
 
-### Остановка контейнеров
-
-Для остановки контейнеров выполните команду:
-
-```bash
-docker-compose stop
-```
 
 ### Инициализация проекта
 
@@ -51,6 +44,14 @@ python manage.py createsuperuser
 
 ```bash
 python manage.py loaddata ingredient recipe
+```
+
+### Остановка контейнеров
+
+Для остановки контейнеров выполните команду:
+
+```bash
+docker-compose stop
 ```
 
 Проект доступен по адресу http://localhost:5000.
